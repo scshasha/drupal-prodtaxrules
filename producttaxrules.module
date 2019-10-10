@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * @file
+ * Provides primary Drupal hook implementations.
+ * 
+ * Alters/Overrides Drupal Commerces tax rules per product type.
+ *
+ * @author Siv Chris Shasha (E-mail: scshasha@icloud.com, Phone: +27 725 432 030)
+ * 
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function producttaxrules_help($route_name, RouteMatchInterface $route_match) {
+	switch ($route_name) {
+		case 'help.page.producttaxrules':
+		case 'producttaxrules.settings_form':
+			return t('Product Tax Rules is a free module to easily override/modidfy tax rules per product type.');
+	}
+}
+

@@ -1,0 +1,8 @@
+# default settings
+producttaxrules.settings_form:
+  path: '/admin/config/system/producttaxrules'
+  defaults:
+    _title: 'Product Tax Rules settings'
+    _form: '\Drupal\producttaxrules\Form\SettingsForm'
+  requirements:
+    _permission: 'administer product tax rules'

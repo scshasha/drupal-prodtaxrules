@@ -1,0 +1,12 @@
+type: module
+name: Product tax rules
+description: 'Product tax rules module to override tax rates on product types.'
+package: Lab
+dependencies:
+  - commerce:commerce
+  - commerce:commerce_order
+  - commerce:commerce_tax
+  - profile:profile
+
+version: '8.x-1.0-dev'
+core: '8.x'

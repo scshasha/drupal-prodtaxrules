@@ -1,0 +1,5 @@
+services:
+  producttaxrules.product_tax_resolver:
+    class: \Drupal\producttaxrules\Resolver\ProductTaxResolver
+    tags:
+      - { name: commerce_tax.tax_rate_resolver, priority: 100 }
